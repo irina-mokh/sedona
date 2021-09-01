@@ -493,7 +493,7 @@ template {
 
 .welcome__layout {
   position: absolute;
-  bottom: 0;
+  bottom: -1px;
 }
 
 .welcome__text {
@@ -547,7 +547,7 @@ template {
 .card {
   flex-basis: 33.3%;
   box-sizing: border-box;
-  padding: 47px 50px;
+  padding: 40px;
 }
 
 .card_blue {
@@ -564,8 +564,7 @@ template {
 }
 
 .card_white {
-  height: 5px;
-  padding: 160px 50px;
+  padding-top: 150px;
   background-position: 50% 60px;
   background-repeat: no-repeat;
 }
@@ -855,11 +854,25 @@ input[type="number"]:focus {
   }
 
   .card {
-    padding: 30px 30px;
+    padding: 15px;
   }
 
   .card_white {
-    padding: 100px 30px;
+    padding-top: 80px;
     background-position: 50% 10px;
+    background-size: 25%;
+  }
+
+  .advantage__title {
+    margin-bottom: 10px;
+  }
+
+  .contact {
+    font-size: 14px;
+  }
+
+  .social__item {
+    width: 40px;
+    height: 40px;
   }
 }
