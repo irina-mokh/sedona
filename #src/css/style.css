@@ -112,7 +112,7 @@
 
 .welcome__layout {
   position: absolute;
-  bottom: 0;
+  bottom: -1px;
 }
 
 .welcome__text {
@@ -162,11 +162,15 @@
     font-size: 12px;
   }
   .card {
-    padding: 30px 30px;
+    padding: 15px;
   }
   .card_white {
-    padding: 100px 30px;
+    padding-top: 80px;
     background-position: 50% 10px;
+    background-size: 25%;
+  }
+  .advantage__title {
+    margin-bottom: 10px;
   }
 }
 
@@ -179,13 +183,12 @@
 .card {
   flex-basis: 33.3%;
   box-sizing: border-box;
-  padding: 47px 50px;
+  padding: 40px
 }
 
 .card_blue {
   color: var(--basic-white);
   background-color: var(--basic-blue);
-  
 }
 
 .card_blue .text {
@@ -197,8 +200,7 @@
 }
 
 .card_white {
-  height: 5px;
-  padding: 160px 50px;
+  padding-top: 150px;
   background-position: 50% 60px;
   background-repeat: no-repeat;
 }
@@ -421,6 +423,16 @@ input[type="number"]:focus {
   margin-top: -120px;
 }
 
+@media (max-width: 768px) {
+  .contact {
+    font-size: 14px;
+  }
+  .social__item{
+    width: 40px;
+    height: 40px;
+  }
+}
+
 .contact {
   font-weight: 700;
   font-size: 21px;
@@ -450,6 +462,7 @@ input[type="number"]:focus {
 .social__item:active {
   background-color: #5496BD;
 }
+
 .social-icon {
   display: flex;
   justify-content: space-around;
