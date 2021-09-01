@@ -159,7 +159,7 @@
 
 @media (max-width: 768px) {
   .text {
-    font-size: 12px;
+    font-size: 10px;
   }
   .card {
     padding: 15px;
@@ -171,6 +171,7 @@
   }
   .advantage__title {
     margin-bottom: 10px;
+    font-size: 14px;
   }
 }
 
@@ -247,7 +248,7 @@
 .button-search_grey {
   display: block;
   margin: 0 auto;
-  width: 568px;
+  max-width: 458px;
   height: 86px;
   background: var(--extra-grey);
   color: var(--basic-white);
@@ -258,6 +259,7 @@
   display: flex;
   justify-content: space-around;
   align-items: center;
+  box-sizing: border-box;
 }
 
 .button-search_grey:hover {
@@ -266,17 +268,16 @@
 
 .button-search_grey:active {
   background: #503E33;
-  ;
 }
 
 .search-form {
   display: block;
   background-color: var(--basic-white);
-  width: 458px;
-  height: 255px;
+  max-width: 458px;
   margin: 0 auto;
   box-shadow: 0px 7px 15px rgba(0, 1, 1, 0.15);
-  padding: 55px;
+  padding: 55px 50px 30px 50px;
+  box-sizing: border-box;
 }
 
 .input {
@@ -323,6 +324,7 @@
 
 input[type='number'] {
   font-family: "PT Sans", "Calibri", sans-serif;
+  max-width: 100px;
 }
 
 input[type="number"]::-webkit-outer-spin-button,
@@ -413,6 +415,23 @@ input[type="number"]:focus {
   background-color: #5496BD;
 }
 
+@media (max-width: 768px) {
+  .button-search_grey {
+    font-size: 18px;
+    height: 2.5em;
+
+  }
+  .search-form {
+    padding: 20px;
+  }
+  .form-row {
+    margin-bottom: 15px;
+  }
+  .button-search_blue {
+    height: 2em;
+    font-size: 18px;
+  }
+}
 
 .footer {
   display: flex;
@@ -425,11 +444,17 @@ input[type="number"]:focus {
 
 @media (max-width: 768px) {
   .contact {
-    font-size: 14px;
+    font-size: 12px;
   }
   .social__item{
-    width: 40px;
-    height: 40px;
+    width: 30px;
+    height: 30px;
+  }
+  .copyright{
+    font-size: 12px;
+  }
+  .academy-logo {
+    transform: scale(0.8);
   }
 }
 
@@ -446,6 +471,7 @@ input[type="number"]:focus {
 
 .social {
  display: flex;
+ padding: 0;
 }
 
 .social__item {
@@ -484,6 +510,7 @@ input[type="number"]:focus {
 
 .academy-logo {
   margin: 0 0 0 8px;
+  align-self: flex-start;
 }
 
 .copyright:hover .academy-logo path{
